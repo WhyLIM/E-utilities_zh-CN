@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.13" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.49" />
+    <style>
+      html {
+        background: var(--bg-color, #fff);
+      }
+
+      html[data-theme="dark"] {
+        background: var(--bg-color, #1d1e1f);
+      }
+
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <meta property="og:url" content="https://vuepress-theme-hope-docs-demo.netlify.app/E-utilities_zh-CN/E-utilities_EN/03-Sample%20Applications%20of%20the%20E-utilities_EN.html"><meta property="og:site_name" content="E-utilities 汉化文档"><meta property="og:title" content="Sample Applications of the E-utilities"><meta property="og:description" content="Sample Applications of the E-utilities Eric Sayers, PhD. Author Information and Affiliations Authors Eric Sayers, PhDcorresponding author1. Affilitions 1 NCBI Email: vog.hin.mln..."><meta property="og:type" content="article"><meta property="og:image" content="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/corrauth.gif"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2024-06-21T12:28:18.000Z"><meta property="article:author" content="Mr.Hope"><meta property="article:modified_time" content="2024-06-21T12:28:18.000Z"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sample Applications of the E-utilities","image":["https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/corrauth.gif","https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/corrauth.gif"],"dateModified":"2024-06-21T12:28:18.000Z","author":[{"@type":"Person","name":"Mr.Hope","url":"https://mister-hope.com"}]}</script><title>Sample Applications of the E-utilities | E-utilities 汉化文档</title><meta name="description" content="Sample Applications of the E-utilities Eric Sayers, PhD. Author Information and Affiliations Authors Eric Sayers, PhDcorresponding author1. Affilitions 1 NCBI Email: vog.hin.mln...">
+    <link rel="preload" href="/E-utilities_zh-CN/assets/style-C6G1EAyw.css" as="style"><link rel="stylesheet" href="/E-utilities_zh-CN/assets/style-C6G1EAyw.css">
+    <link rel="modulepreload" href="/E-utilities_zh-CN/assets/app-hitTW-u5.js"><link rel="modulepreload" href="/E-utilities_zh-CN/assets/03-Sample Applications of the E-utilities_EN.html-DM0ZQTTP.js"><link rel="modulepreload" href="/E-utilities_zh-CN/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="prefetch" href="/E-utilities_zh-CN/assets/index.html-DgQugJTn.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/portfolio.html-CT76zX-7.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/01-E-utilities Quick Start_EN.html-B2b4ynbw.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/02-A General Introduction to the E-utilities_EN.html-D14zx3nD.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/04-The E-utilities In-Depth_EN.html-Dp07673N.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/01-E-utilities Quick Start_zh-CN.html-eOc4u-I9.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/02-A General Introduction to the E-utilities_zh-CN.html-DTwm-Epf.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/03-Sample Applications of the E-utilities_zh-CN.html-Dprvgpwq.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/04-The E-utilities In-Depth_zh-CN.html-CEnggEjf.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/404.html-xel1pToZ.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/index.html-BzhwyT7S.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/index.html-BrQYnUpJ.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/giscus-D-fkNSKD.js" as="script"><link rel="prefetch" href="/E-utilities_zh-CN/assets/photoswipe.esm-GXRgw7eJ.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><div class="theme-container external-link-icon has-toc"><!--[--><header id="navbar" class="vp-navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!----><!--[--><a class="route-link vp-brand" href="/E-utilities_zh-CN/"><img class="vp-nav-logo" src="https://theme-hope-assets.vuejs.press/logo.svg" alt><!----><span class="vp-site-name hide-in-pad">E-utilities 汉化文档</span></a><!--]--><!----></div><div class="vp-navbar-center"><!----><!--[--><nav class="vp-nav-links"><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/E-utilities_zh-CN/" aria-label="项目主页"><!--[--><span class="font-icon icon fa-fw fa-sm fas fa-home" style=""></span><!--]-->项目主页<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link route-link-active auto-link" href="/E-utilities_zh-CN/E-utilities_EN/" aria-label="英文文档副本"><!--[--><span class="font-icon icon fa-fw fa-sm fas fa-earth-americas" style=""></span><!--]-->英文文档副本<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/E-utilities_zh-CN/E-utilities_zh-CN/" aria-label="汉化文档"><!--[--><span class="font-icon icon fa-fw fa-sm fas fa-language" style=""></span><!--]-->汉化文档<!----></a></div></nav><!--]--><!----></div><div class="vp-navbar-end"><!----><!--[--><!----><div class="vp-nav-item vp-action"><a class="vp-action-link" href="https://github.com/vuepress-theme-hope/vuepress-theme-hope" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="github icon" name="github" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="vp-nav-item hide-in-mobile"><button type="button" class="vp-color-mode-switch" id="color-mode-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" name="auto" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" name="dark" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="light icon" name="light" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><!----><!--]--><!----><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!----><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/" aria-label="项目主页"><!--[--><span class="font-icon icon fa-fw fa-sm fas fa-home" style=""></span><!--]-->项目主页<!----></a></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-header clickable active"><span class="font-icon icon fa-fw fa-sm fas fa-earth-americas" style=""></span><a class="route-link route-link-active auto-link vp-sidebar-title no-external-link-icon" href="/E-utilities_zh-CN/E-utilities_EN/" aria-label="E-utilities 英文文档"><!---->E-utilities 英文文档<!----></a><!----></p><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_EN/01-E-utilities%20Quick%20Start_EN.html" aria-label="E-utilities Quick Start"><!---->E-utilities Quick Start<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_EN/02-A%20General%20Introduction%20to%20the%20E-utilities_EN.html" aria-label="A General Introduction to the E-utilities"><!---->A General Introduction to the E-utilities<!----></a></li><li><a class="route-link route-link-active auto-link vp-sidebar-link active" href="/E-utilities_zh-CN/E-utilities_EN/03-Sample%20Applications%20of%20the%20E-utilities_EN.html" aria-label="Sample Applications of the E-utilities"><!---->Sample Applications of the E-utilities<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_EN/04-The%20E-utilities%20In-Depth_EN.html" aria-label="The E-utilities In-Depth: Parameters, Syntax and More"><!---->The E-utilities In-Depth: Parameters, Syntax and More<!----></a></li></ul></section></li><li><section class="vp-sidebar-group"><p class="vp-sidebar-header clickable"><span class="font-icon icon fa-fw fa-sm fas fa-language" style=""></span><a class="route-link auto-link vp-sidebar-title no-external-link-icon" href="/E-utilities_zh-CN/E-utilities_zh-CN/" aria-label="E-utilities 汉化文档"><!---->E-utilities 汉化文档<!----></a><!----></p><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_zh-CN/01-E-utilities%20Quick%20Start_zh-CN.html" aria-label="E-utilities 快速入门指南"><!---->E-utilities 快速入门指南<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_zh-CN/02-A%20General%20Introduction%20to%20the%20E-utilities_zh-CN.html" aria-label="E-utilities 概述"><!---->E-utilities 概述<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_zh-CN/03-Sample%20Applications%20of%20the%20E-utilities_zh-CN.html" aria-label="E-utilities 示例应用程序"><!---->E-utilities 示例应用程序<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/E-utilities_zh-CN/E-utilities_zh-CN/04-The%20E-utilities%20In-Depth_zh-CN.html" aria-label="E-utilities 深入：参数、语法等"><!---->E-utilities 深入：参数、语法等<!----></a></li></ul></section></li></ul><!----></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!----><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><!---->Sample Applications of the E-utilities</h1><div class="page-info"><span class="page-author-info" aria-label="作者🖊" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon author-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="author icon" name="author"><path d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8 57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8 22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z"></path></svg><span><a class="page-author-item" href="https://mister-hope.com" target="_blank" rel="noopener noreferrer">Mr.Hope</a></span><span property="author" content="Mr.Hope"></span></span><!----><span class="page-date-info" aria-label="写作日期📅" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon" name="calendar"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span><!----></span><meta property="datePublished" content="2024-06-21T12:28:18.000Z"></span><!----><span class="page-reading-time-info" aria-label="阅读时间⌛" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon" name="timer"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 10 分钟</span><meta property="timeRequired" content="PT10M"></span><!----><!----></div><hr></div><div class="vp-toc-placeholder"><aside id="toc"><!----><div class="vp-toc-header">此页内容<button type="button" class="print-button" title="打印"><svg xmlns="http://www.w3.org/2000/svg" class="icon print-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="print icon" name="print"><path d="M819.2 364.8h-44.8V128c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v236.8h-44.8C145.067 364.8 96 413.867 96 473.6v192c0 59.733 49.067 108.8 108.8 108.8h44.8V896c0 17.067 14.933 32 32 32h460.8c17.067 0 32-14.933 32-32V774.4h44.8c59.733 0 108.8-49.067 108.8-108.8v-192c0-59.733-49.067-108.8-108.8-108.8zM313.6 160h396.8v204.8H313.6V160zm396.8 704H313.6V620.8h396.8V864zM864 665.6c0 25.6-19.2 44.8-44.8 44.8h-44.8V588.8c0-17.067-14.933-32-32-32H281.6c-17.067 0-32 14.933-32 32v121.6h-44.8c-25.6 0-44.8-19.2-44.8-44.8v-192c0-25.6 19.2-44.8 44.8-44.8h614.4c25.6 0 44.8 19.2 44.8 44.8v192z"></path></svg></button><div class="arrow end"></div></div><div class="vp-toc-wrapper"><ul class="vp-toc-list"><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#introduction">Introduction</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#basic-pipelines">Basic Pipelines</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#esearch-–-esummary-efetch">ESearch – ESummary/EFetch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#epost-–-esummary-efetch">EPost – ESummary/EFetch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#elink-–-esummary-efetch">ELink – ESummary/Efetch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#esearch-–-elink-–-esummary-efetch">ESearch – ELink – ESummary/EFetch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#epost-–-elink-–-esummary-efetch">EPost – ELink – ESummary/EFetch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#epost-–-esearch">EPost – ESearch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#elink-–-esearch">ELink – ESearch</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#application-1-converting-gi-numbers-to-accession-numbers">Application 1: Converting GI numbers to accession numbers</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#application-2-converting-accession-numbers-to-data">Application 2: Converting accession numbers to data</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#application-3-retrieving-large-datasets">Application 3: Retrieving large datasets</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#application-4-finding-unique-sets-of-linked-records-for-each-member-of-a-large-dataset">Application 4: Finding unique sets of linked records for each member of a large dataset</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#demonstration-programs">Demonstration Programs</a></li><!----><!--]--><!--[--><li class="vp-toc-item"><a class="route-link vp-toc-link level2" href="#for-more-information">For More Information</a></li><!----><!--]--></ul><div class="vp-toc-marker" style="top:-1.7rem;"></div></div><!----></aside></div><!----><div class="theme-hope-content"><h1 id="sample-applications-of-the-e-utilities" tabindex="-1"><a class="header-anchor" href="#sample-applications-of-the-e-utilities"><span>Sample Applications of the E-utilities</span></a></h1><blockquote><p>Eric Sayers, PhD.</p><p><a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#__NBK25498_ai__" target="_blank" rel="noopener noreferrer">Author Information and Affiliations</a></p><p><strong>Authors</strong></p><p>Eric Sayers, PhD<img src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/corrauth.gif" alt="corresponding author" loading="lazy">1.</p><p><strong>Affilitions</strong></p><p>1 NCBI</p><p>Email: <a href="mailto:dev@null" target="_blank" rel="noopener noreferrer">vog.hin.mln.ibcn@sreyas</a></p><p><img src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/corrauth.gif" alt="corresponding author" loading="lazy">Corresponding author.</p><p>Created: April 24, 2009; Last Update: November 1, 2017.</p><p><em>Estimated reading time: 9 minutes</em></p></blockquote><h2 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction"><span>Introduction</span></a></h2><p>This chapter presents several examples of how the E-utilities can be used to build useful applications. These examples use Perl to create the E-utility pipelines, and assume that the LWP::Simple module is installed. This module includes the <em>get</em> function that supports HTTP GET requests. One example (Application 4) uses an HTTP POST request, and requires the LWP::UserAgent module. In Perl, scalar variable names are preceded by a &quot;$&quot; symbol, and array names are preceded by a &quot;@&quot;. In several instances, results will be stored in such variables for use in subsequent E-utility calls. The code examples here are working programs that can be copied to a text editor and executed directly. Equivalent HTTP requests can be constructed in many modern programming languages; all that is required is the ability to create and post an HTTP request.</p><h2 id="basic-pipelines" tabindex="-1"><a class="header-anchor" href="#basic-pipelines"><span>Basic Pipelines</span></a></h2><p>All E-utility applications consist of a series of calls that we will refer to as a pipeline. The simplest E-utility pipelines consist of two calls, and any arbitrary pipeline can be assembled from these basic building blocks. Many of these pipelines conclude with either ESummary (to retrieve DocSums) or EFetch (to retrieve full records). The comments indicate those portions of the code that are required for either call.</p><h2 id="esearch-–-esummary-efetch" tabindex="-1"><a class="header-anchor" href="#esearch-–-esummary-efetch"><span>ESearch – ESummary/EFetch</span></a></h2><p><strong>Input:</strong> Entrez text query</p><p><strong>ESummary Output:</strong> XML Document Summaries</p><p><strong>EFetch Output:</strong> Formatted data records (e.g. abstracts, FASTA)</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Download PubMed records that are indexed in MeSH for both asthma and </span></span>
+<span class="line"><span># leukotrienes and were also published in 2009.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db = &#39;pubmed&#39;;</span></span>
+<span class="line"><span>$query = &#39;asthma[mesh]+AND+leukotrienes[mesh]+AND+2009[pdat]&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=$db&amp;term=$query&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esearch URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-ESummary</span></span>
+<span class="line"><span>#assemble the esummary URL</span></span>
+<span class="line"><span>$url = $base . &quot;esummary.fcgi?db=$db&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esummary URL</span></span>
+<span class="line"><span>$docsums = get($url);</span></span>
+<span class="line"><span>print &quot;$docsums&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-EFetch</span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=$db&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=abstract&amp;retmode=text&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$data = get($url);</span></span>
+<span class="line"><span>print &quot;$data&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="epost-–-esummary-efetch" tabindex="-1"><a class="header-anchor" href="#epost-–-esummary-efetch"><span>EPost – ESummary/EFetch</span></a></h2><p><strong>Input:</strong> List of Entrez UIDs (integer identifiers, e.g. PMID, GI, Gene ID)</p><p><strong>ESummary Output:</strong> XML Document Summaries</p><p><strong>EFetch Output:</strong> Formatted data records (e.g. abstracts, FASTA)</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Download protein records corresponding to a list of GI numbers.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db = &#39;protein&#39;;</span></span>
+<span class="line"><span>$id_list = &#39;194680922,50978626,28558982,9507199,6678417&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the epost URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;epost.fcgi?db=$db&amp;id=$id_list&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the epost URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for EPost-ESummary</span></span>
+<span class="line"><span>#assemble the esummary URL</span></span>
+<span class="line"><span>$url = $base . &quot;esummary.fcgi?db=$db&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esummary URL</span></span>
+<span class="line"><span>$docsums = get($url);</span></span>
+<span class="line"><span>print &quot;$docsums&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for EPost-EFetch</span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=$db&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=fasta&amp;retmode=text&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$data = get($url);</span></span>
+<span class="line"><span>print &quot;$data&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><em><strong>Note:*</strong> <em>To post a large number (more than a few hundred) UIDs in a single URL, please use the HTTP POST method for the EPost call (see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a></em>).*</p><h2 id="elink-–-esummary-efetch" tabindex="-1"><a class="header-anchor" href="#elink-–-esummary-efetch"><span>ELink – ESummary/Efetch</span></a></h2><p><strong>Input:</strong> List of Entrez UIDs in database A (integer identifiers, e.g. PMID, GI, Gene ID)</p><p><strong>ESummary Output:</strong> Linked XML Document Summaries from database B</p><p><strong>EFetch Output:</strong> Formatted data records (e.g. abstracts, FASTA) from database B</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Download gene records linked to a set of proteins corresponding to a list</span></span>
+<span class="line"><span># of GI numbers.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db1 = &#39;protein&#39;;  # &amp;dbfrom</span></span>
+<span class="line"><span>$db2 = &#39;gene&#39;;     # &amp;db</span></span>
+<span class="line"><span>$linkname = &#39;protein_gene&#39;; # desired link &amp;linkname</span></span>
+<span class="line"><span>#input UIDs in $db1 (protein GIs)</span></span>
+<span class="line"><span>$id_list = &#39;194680922,50978626,28558982,9507199,6678417&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the elink URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;elink.fcgi?dbfrom=$db1&amp;db=$db2&amp;id=$id_list&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;linkname=$linkname&amp;cmd=neighbor_history&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the elink URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ELink-ESummary</span></span>
+<span class="line"><span>#assemble the esummary URL</span></span>
+<span class="line"><span>$url = $base . &quot;esummary.fcgi?db=$db&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esummary URL</span></span>
+<span class="line"><span>$docsums = get($url);</span></span>
+<span class="line"><span>print &quot;$docsums&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ELink-EFetch</span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=$db2&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=xml&amp;retmode=xml&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$data = get($url);</span></span>
+<span class="line"><span>print &quot;$data&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>*<strong>Notes:*</strong> <em>To submit a large number (more than a few hundred) UIDs to ELink in one URL, please use the HTTP POST method for the Elink call (see Application 4). The &amp;linkname parameter is used to force ELink to return only one set of links (one &amp;query_key) to simplify parsing. If more than one link is desired, the above code must be altered to parse the multiple &amp;query_key values from the ELink XML output. This code uses ELink in &quot;batch&quot; mode, in that only one set of gene IDs is returned and the one-to-one correspondence between protein GIs and gene IDs is lost. To preserve this one-to-one correspondence, please see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a> <em>below.</em></p><h2 id="esearch-–-elink-–-esummary-efetch" tabindex="-1"><a class="header-anchor" href="#esearch-–-elink-–-esummary-efetch"><span>ESearch – ELink – ESummary/EFetch</span></a></h2><p><strong>Input:</strong> Entrez text query in database A</p><p><strong>ESummary Output:</strong> Linked XML Document Summaries from database B</p><p><strong>EFetch Output:</strong> Formatted data records (e.g. abstracts, FASTA) from database B</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span># Download protein FASTA records linked to abstracts published </span></span>
+<span class="line"><span># in 2009 that are indexed in MeSH for both asthma and </span></span>
+<span class="line"><span># leukotrienes.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db1 = &#39;pubmed&#39;;</span></span>
+<span class="line"><span>$db2 = &#39;protein&#39;;</span></span>
+<span class="line"><span>$linkname = &#39;pubmed_protein&#39;;</span></span>
+<span class="line"><span>$query = &#39;asthma[mesh]+AND+leukotrienes[mesh]+AND+2009[pdat]&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=$db1&amp;term=$query&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span>#post the esearch URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web1 = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key1 = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the elink URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;elink.fcgi?dbfrom=$db1&amp;db=$db2&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;query_key=$key1&amp;WebEnv=$web1&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;linkname=$linkname&amp;cmd=neighbor_history&quot;;</span></span>
+<span class="line"><span>print &quot;$url\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the elink URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span>print &quot;$output\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web2 = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key2 = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-ELink-ESummary</span></span>
+<span class="line"><span>#assemble the esummary URL</span></span>
+<span class="line"><span>$url = $base . &quot;esummary.fcgi?db=$db2&amp;query_key=$key2&amp;WebEnv=$web2&quot;;</span></span>
+<span class="line"><span>#post the esummary URL</span></span>
+<span class="line"><span>$docsums = get($url);</span></span>
+<span class="line"><span>print &quot;$docsums&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-ELink-EFetch</span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=$db2&amp;query_key=$key2&amp;WebEnv=$web2&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=fasta&amp;retmode=text&quot;;</span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$data = get($url);</span></span>
+<span class="line"><span>print &quot;$data&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>*<strong>Notes:*</strong> <em>The &amp;linkname parameter is used to force ELink to return only one set of links (one &amp;query_key) to simplify parsing. If more than one link is desired, the above code must be altered to parse the multiple &amp;query_key values from the ELink XML output. This code uses ELink in &quot;batch&quot; mode, in that only one set of PubMed IDs is returned and the one-to-one correspondence between PubMed IDs and their related PubMed IDs is lost. To preserve this one-to-one correspondence, please see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a> <em>below.</em></p><h2 id="epost-–-elink-–-esummary-efetch" tabindex="-1"><a class="header-anchor" href="#epost-–-elink-–-esummary-efetch"><span>EPost – ELink – ESummary/EFetch</span></a></h2><p><strong>Input:</strong> List of Entrez UIDs (integer identifiers, e.g. PMID, GI, Gene ID) in database A</p><p><strong>ESummary Output:</strong> Linked XML Document Summaries from database B</p><p><strong>EFetch Output:</strong> Formatted data records (e.g. abstracts, FASTA) from database B</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Downloads gene records linked to a set of proteins corresponding</span></span>
+<span class="line"><span># to a list of protein GI numbers.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db1 = &#39;protein&#39;;  # &amp;dbfrom</span></span>
+<span class="line"><span>$db2 = &#39;gene&#39;;     # &amp;db</span></span>
+<span class="line"><span>$linkname = &#39;protein_gene&#39;;</span></span>
+<span class="line"><span>#input UIDs in $db1 (protein GIs)</span></span>
+<span class="line"><span>$id_list = &#39;194680922,50978626,28558982,9507199,6678417&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the epost URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;epost.fcgi?db=$db1&amp;id=$id_list&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the epost URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web1 = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key1 = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the elink URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;elink.fcgi?dbfrom=$db1&amp;db=$db2&amp;query_key=$key1&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;WebEnv=$web1&amp;linkname=$linkname&amp;cmd=neighbor_history&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the elink URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web2 = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key2 = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-ELink-ESummary</span></span>
+<span class="line"><span>#assemble the esummary URL</span></span>
+<span class="line"><span>$url = $base . &quot;esummary.fcgi?db=$db2&amp;query_key=$key2&amp;WebEnv=$web2&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esummary URL</span></span>
+<span class="line"><span>$docsums = get($url);</span></span>
+<span class="line"><span>print &quot;$docsums&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### include this code for ESearch-ELink-EFetch</span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=$db2&amp;query_key=$key2&amp;WebEnv=$web2&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=xml&amp;retmode=xml&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$data = get($url);</span></span>
+<span class="line"><span>print &quot;$data&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>*<strong>Notes:*</strong> <em>To post a large number (more than a few hundred) UIDs in a single URL, please use the HTTP POST method for the EPost call (see Application 4 below). The &amp;linkname parameter is used to force ELink to return only one set of links (one &amp;query_key) to simplify parsing. If more than one link is desired, the above code must be altered to parse the multiple &amp;query_key values from the ELink XML output. This code uses ELink in &quot;batch&quot; mode, in that only one set of gene IDs is returned and the one-to-one correspondence between protein GIs and Gene IDs is lost. To preserve this one-to-one correspondence, please see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a> <em>below.</em></p><h2 id="epost-–-esearch" tabindex="-1"><a class="header-anchor" href="#epost-–-esearch"><span>EPost – ESearch</span></a></h2><p><strong>Input:</strong> List of Entrez UIDs (integer identifiers, e.g. PMID, GI, Gene ID)</p><p><strong>Output:</strong> History set consisting of the subset of posted UIDs that match an Entrez text query</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Given an input set of protein GI numbers, this script creates </span></span>
+<span class="line"><span># a history set containing the members of the input set that </span></span>
+<span class="line"><span># correspond to human proteins. </span></span>
+<span class="line"><span>#(Which of these proteins are from human?)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db = &#39;protein&#39;;</span></span>
+<span class="line"><span>$query = &#39;human[orgn]&#39;;</span></span>
+<span class="line"><span>$id_list = &#39;194680922,50978626,28558982,9507199,6678417&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the epost URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;epost.fcgi?db=$db&amp;id=$id_list&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the epost URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$term = &quot;%23$key+AND+$query&quot;;  </span></span>
+<span class="line"><span># %23 places a &#39;#&#39; before the query key</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=$db&amp;term=$term&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;WebEnv=$web&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post esearch URL</span></span>
+<span class="line"><span>$limited = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>print &quot;$limited\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Output remains on the history server (&amp;query_key, &amp;WebEnv)</span></span>
+<span class="line"><span># Use ESummary or EFetch as above to retrieve them</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><em><strong>Note:*</strong> <em>To post a large number (more than a few hundred) UIDs in a single URL, please use the HTTP POST method for the EPost call (see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a></em>).*</p><h2 id="elink-–-esearch" tabindex="-1"><a class="header-anchor" href="#elink-–-esearch"><span>ELink – ESearch</span></a></h2><p><strong>Input:</strong> List of Entrez UIDs (integer identifiers, e.g. PMID, GI, Gene ID) in database A</p><p><strong>Output:</strong> History set consisting of the subset of linked UIDs in database B that match an Entrez text query</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Given an input set of protein GI numbers, this script creates a </span></span>
+<span class="line"><span># history set containing the gene IDs linked to members of the input </span></span>
+<span class="line"><span># set that also are on human chromosome X. </span></span>
+<span class="line"><span>#(Which of the input proteins are encoded by a gene on human </span></span>
+<span class="line"><span># chromosome X?)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$db1 = &#39;protein&#39;;  # &amp;dbfrom</span></span>
+<span class="line"><span>$db2 = &#39;gene&#39;;     # &amp;db</span></span>
+<span class="line"><span>$linkname = &#39;protein_gene&#39;; # desired link &amp;linkname</span></span>
+<span class="line"><span>$query = &#39;human[orgn]+AND+x[chr]&#39;;</span></span>
+<span class="line"><span>#input UIDs in $db1 (protein GIs)</span></span>
+<span class="line"><span>$id_list = &#39;148596974,42544182,187937179,4557377,6678417&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the elink URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;elink.fcgi?dbfrom=$db1&amp;db=$db2&amp;id=$id_list&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;linkname=$linkname&amp;cmd=neighbor_history&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the elink URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$term = &quot;%23$key+AND+$query&quot;;  # %23 places a &#39;#&#39; before the query key</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=$db2&amp;term=$term&amp;WebEnv=$web&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post esearch URL</span></span>
+<span class="line"><span>$limited = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>print &quot;$limited\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Output remains on the history server (&amp;query_key, &amp;WebEnv)</span></span>
+<span class="line"><span># Use ESummary or EFetch as in previous examples to retrieve them</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><em><strong>Note:*</strong> <em>To submit a large number (more than a few hundred) UIDs to ELink in one URL, please use the HTTP POST method for the Elink call (see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a></em>). The &amp;linkname parameter is used to force ELink to return only one set of links (one &amp;query_key) to simplify parsing. If more than one link is desired, the above code must be altered to parse the multiple &amp;query_key values from the ELink XML output. This code uses ELink in &quot;batch&quot; mode, in that only one set of gene IDs is returned and the one-to-one correspondence between protein GIs and Gene IDs is lost. To preserve this one-to-one correspondence, please see* <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a> <em>below.</em></p><h2 id="application-1-converting-gi-numbers-to-accession-numbers" tabindex="-1"><a class="header-anchor" href="#application-1-converting-gi-numbers-to-accession-numbers"><span>Application 1: Converting GI numbers to accession numbers</span></a></h2><p><strong>Goal:</strong> Starting with a list of nucleotide GI numbers, prepare a set of corresponding accession numbers.</p><p><strong>Solution:</strong> Use EFetch with &amp;retttype=acc</p><p><strong>Input:</strong> $gi_list – comma-delimited list of GI numbers</p><p><strong>Output:</strong> List of accession numbers.</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span>$gi_list = &#39;24475906,224465210,50978625,9507198&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=nucleotide&amp;id=$gi_list&amp;rettype=acc&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span>print &quot;$output&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>*<strong>Notes:*</strong> <em>The order of the accessions in the output will be the same order as the GI numbers in $gi_list.</em></p><h2 id="application-2-converting-accession-numbers-to-data" tabindex="-1"><a class="header-anchor" href="#application-2-converting-accession-numbers-to-data"><span>Application 2: Converting accession numbers to data</span></a></h2><p><strong>Goal:</strong> Starting with a list of protein accession numbers, return the sequences in FASTA format.</p><p><strong>Solution:</strong> Create a string consisting of items separated by &#39;OR&#39;, where each item is an accession number followed by &#39;[accn]&#39;.</p><p>Example: accn1[accn]+OR+accn2[accn]+OR+accn3[accn]+OR+…</p><p>Submit this string as a &amp;term in ESearch, then use EFetch to retrieve the FASTA data.</p><p><strong>Input:</strong> $acc_list – comma-delimited list of accessions</p><p><strong>Output:</strong> FASTA data</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span>$acc_list = &#39;NM_009417,NM_000547,NM_001003009,NM_019353&#39;;</span></span>
+<span class="line"><span>@acc_array = split(/,/, $acc_list);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#append [accn] field to each accession</span></span>
+<span class="line"><span>for ($i=0; $i &lt; @acc_array; $i++) {</span></span>
+<span class="line"><span>   $acc_array[$i] .= &quot;[accn]&quot;;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#join the accessions with OR</span></span>
+<span class="line"><span>$query = join(&#39;+OR+&#39;,@acc_array);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=nuccore&amp;term=$query&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esearch URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv and QueryKey</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the efetch URL</span></span>
+<span class="line"><span>$url = $base . &quot;efetch.fcgi?db=nuccore&amp;query_key=$key&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span>$url .= &quot;&amp;rettype=fasta&amp;retmode=text&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the efetch URL</span></span>
+<span class="line"><span>$fasta = get($url);</span></span>
+<span class="line"><span>print &quot;$fasta&quot;;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><em><strong>Notes:*</strong> <em>For large numbers of accessions, use HTTP POST to submit the esearch request (see</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_4_Finding_unique_se" target="_blank" rel="noopener noreferrer"><em>Application 4</em></a></em>), and see* <a href="https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_3_Retrieving_large" target="_blank" rel="noopener noreferrer"><em>Application 3</em></a> <em>below for downloading the large set in batches.</em></p><h2 id="application-3-retrieving-large-datasets" tabindex="-1"><a class="header-anchor" href="#application-3-retrieving-large-datasets"><span>Application 3: Retrieving large datasets</span></a></h2><p><strong>Goal:</strong> Download all chimpanzee mRNA sequences in FASTA format (&gt;50,000 sequences).</p><p><strong>Solution:</strong> First use ESearch to retrieve the GI numbers for these sequences and post them on the History server, then use multiple EFetch calls to retrieve the data in batches of 500.</p><p><strong>Input:</strong> $query – chimpanzee[orgn]+AND+biomol+mrna[prop]</p><p><strong>Output:</strong> A file named &quot;chimp.fna&quot; containing FASTA data.</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span>$query = &#39;chimpanzee[orgn]+AND+biomol+mrna[prop]&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=nucleotide&amp;term=$query&amp;usehistory=y&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esearch URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse WebEnv, QueryKey and Count (# records retrieved)</span></span>
+<span class="line"><span>$web = $1 if ($output =~ /&lt;WebEnv&gt;(\S+)&lt;\/WebEnv&gt;/);</span></span>
+<span class="line"><span>$key = $1 if ($output =~ /&lt;QueryKey&gt;(\d+)&lt;\/QueryKey&gt;/);</span></span>
+<span class="line"><span>$count = $1 if ($output =~ /&lt;Count&gt;(\d+)&lt;\/Count&gt;/);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#open output file for writing</span></span>
+<span class="line"><span>open(OUT, &quot;&gt;chimp.fna&quot;) || die &quot;Can&#39;t open file!\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#retrieve data in batches of 500</span></span>
+<span class="line"><span>$retmax = 500;</span></span>
+<span class="line"><span>for ($retstart = 0; $retstart &lt; $count; $retstart += $retmax) {</span></span>
+<span class="line"><span>        $efetch_url = $base .&quot;efetch.fcgi?db=nucleotide&amp;WebEnv=$web&quot;;</span></span>
+<span class="line"><span>        $efetch_url .= &quot;&amp;query_key=$key&amp;retstart=$retstart&quot;;</span></span>
+<span class="line"><span>        $efetch_url .= &quot;&amp;retmax=$retmax&amp;rettype=fasta&amp;retmode=text&quot;;</span></span>
+<span class="line"><span>        $efetch_out = get($efetch_url);</span></span>
+<span class="line"><span>        print OUT &quot;$efetch_out&quot;;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>close OUT;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="application-4-finding-unique-sets-of-linked-records-for-each-member-of-a-large-dataset" tabindex="-1"><a class="header-anchor" href="#application-4-finding-unique-sets-of-linked-records-for-each-member-of-a-large-dataset"><span>Application 4: Finding unique sets of linked records for each member of a large dataset</span></a></h2><p><strong>Goal:</strong> Download separately the SNP rs numbers (identifiers) for each current gene on human chromosome 20.</p><p><strong>Solution:</strong> First use ESearch to retrieve the Gene IDs for the genes, and then assemble an ELink URL where each Gene ID is submitted as a separate &amp;id parameter.</p><p><strong>Input:</strong> $query – human[orgn]+AND+20[chr]+AND+alive[prop]</p><p><strong>Output:</strong> A file named &quot;snp_table&quot; containing on each line the gene id followed by a colon (&quot;😊 followed by a comma-delimited list of the linked SNP rs numbers.</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span>use LWP::Simple;</span></span>
+<span class="line"><span>use LWP::UserAgent;</span></span>
+<span class="line"><span>$query = &#39;human[orgn]+AND+20[chr]+AND+alive[prop]&#39;;</span></span>
+<span class="line"><span>$db1 = &#39;gene&#39;;</span></span>
+<span class="line"><span>$db2 = &#39;snp&#39;;</span></span>
+<span class="line"><span>$linkname = &#39;gene_snp&#39;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble the esearch URL</span></span>
+<span class="line"><span>$base = &#39;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/&#39;;</span></span>
+<span class="line"><span>$url = $base . &quot;esearch.fcgi?db=$db1&amp;term=$query&amp;usehistory=y&amp;retmax=5000&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the esearch URL</span></span>
+<span class="line"><span>$output = get($url);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#parse IDs retrieved</span></span>
+<span class="line"><span>while ($output =~ /&lt;Id&gt;(\d+?)&lt;\/Id&gt;/sg) {</span></span>
+<span class="line"><span>   push(@ids, $1);</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#assemble  the elink URL as an HTTP POST call</span></span>
+<span class="line"><span>$url = $base . &quot;elink.fcgi&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$url_params = &quot;dbfrom=$db1&amp;db=$db2&amp;linkname=$linkname&quot;;</span></span>
+<span class="line"><span>foreach $id (@ids) {      </span></span>
+<span class="line"><span>   $url_params .= &quot;&amp;id=$id&quot;;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#create HTTP user agent</span></span>
+<span class="line"><span>$ua = new LWP::UserAgent;</span></span>
+<span class="line"><span>$ua-&gt;agent(&quot;elink/1.0 &quot; . $ua-&gt;agent);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#create HTTP request object</span></span>
+<span class="line"><span>$req = new HTTP::Request POST =&gt; &quot;$url&quot;;</span></span>
+<span class="line"><span>$req-&gt;content_type(&#39;application/x-www-form-urlencoded&#39;);</span></span>
+<span class="line"><span>$req-&gt;content(&quot;$url_params&quot;);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#post the HTTP request</span></span>
+<span class="line"><span>$response = $ua-&gt;request($req); </span></span>
+<span class="line"><span>$output = $response-&gt;content;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>open (OUT, &quot;&gt;snp_table&quot;) || die &quot;Can&#39;t open file!\n&quot;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>while ($output =~ /&lt;LinkSet&gt;(.*?)&lt;\/LinkSet&gt;/sg) {</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>   $linkset = $1;</span></span>
+<span class="line"><span>   if ($linkset =~ /&lt;IdList&gt;(.*?)&lt;\/IdList&gt;/sg) {</span></span>
+<span class="line"><span>      $input = $1;</span></span>
+<span class="line"><span>      $input_id = $1 if ($input =~ /&lt;Id&gt;(\d+)&lt;\/Id&gt;/sg); </span></span>
+<span class="line"><span>   }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>   while ($linkset =~ /&lt;Link&gt;(.*?)&lt;\/Link&gt;/sg) {</span></span>
+<span class="line"><span>      $link = $1;</span></span>
+<span class="line"><span>      push (@output, $1) if ($link =~ /&lt;Id&gt;(\d+)&lt;\/Id&gt;/);</span></span>
+<span class="line"><span>   }</span></span>
+<span class="line"><span>      </span></span>
+<span class="line"><span>   print OUT &quot;$input_id:&quot; . join(&#39;,&#39;, @output) . &quot;\n&quot;;</span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>close OUT;</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>*<strong>Notes:*</strong> <em>This example uses an HTTP POST request for the elink call, as the number of Gene IDs is over 500. The &amp;retmax parameter in the ESearch call is set to 5000, as this is a reasonable limit to the number of IDs to send to ELink in one request (if you send 5000 IDs, you are effectively performing 5000 ELink operations). If you need to link more than 5000 records, add &amp;retstart to the ESearch call and repeat the entire procedure for each batch of 5000 IDs, incrementing &amp;retstart for each batch.</em></p><h2 id="demonstration-programs" tabindex="-1"><a class="header-anchor" href="#demonstration-programs"><span>Demonstration Programs</span></a></h2><p>Please see <a href="https://www.ncbi.nlm.nih.gov/books/n/helpeutils/chapter1/#chapter1.Demonstration_Programs" target="_blank" rel="noopener noreferrer">Chapter 1</a> for sample Perl scripts.</p><h2 id="for-more-information" tabindex="-1"><a class="header-anchor" href="#for-more-information"><span>For More Information</span></a></h2><p>Please see <a href="https://www.ncbi.nlm.nih.gov/books/n/helpeutils/chapter1/#chapter1.For_More_Information_8" target="_blank" rel="noopener noreferrer">Chapter 1</a> for getting additional information about the E-utilities.</p></div><!----><footer class="vp-page-meta"><div class="vp-meta-item edit-link"><a class="auto-link external-link vp-meta-label" href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/edit/main/src/E-utilities_EN/03-Sample Applications of the E-utilities_EN.md" aria-label="在 GitHub 上编辑此页" rel="noopener noreferrer" target="_blank"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon edit-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="edit icon" name="edit"><path d="M430.818 653.65a60.46 60.46 0 0 1-50.96-93.281l71.69-114.012 7.773-10.365L816.038 80.138A60.46 60.46 0 0 1 859.225 62a60.46 60.46 0 0 1 43.186 18.138l43.186 43.186a60.46 60.46 0 0 1 0 86.373L588.879 565.55l-8.637 8.637-117.466 68.234a60.46 60.46 0 0 1-31.958 11.229z"></path><path d="M728.802 962H252.891A190.883 190.883 0 0 1 62.008 771.98V296.934a190.883 190.883 0 0 1 190.883-192.61h267.754a60.46 60.46 0 0 1 0 120.92H252.891a69.962 69.962 0 0 0-69.098 69.099V771.98a69.962 69.962 0 0 0 69.098 69.098h475.911A69.962 69.962 0 0 0 797.9 771.98V503.363a60.46 60.46 0 1 1 120.922 0V771.98A190.883 190.883 0 0 1 728.802 962z"></path></svg><!--]-->在 GitHub 上编辑此页<!----></a></div><div class="vp-meta-item git-info"><div class="update-time"><span class="vp-meta-label">上次编辑于: </span><!----></div><div class="contributors"><span class="vp-meta-label">贡献者: </span><!--[--><!--[--><span class="vp-meta-info" title="email: mli.bio@outlook.com">Mli-TB</span><!--]--><!--]--></div></div></footer><nav class="vp-page-nav"><a class="route-link auto-link prev" href="/E-utilities_zh-CN/E-utilities_EN/02-A%20General%20Introduction%20to%20the%20E-utilities_EN.html" aria-label="A General Introduction to the E-utilities"><div class="hint"><span class="arrow start"></span>上一页</div><div class="link"><!---->A General Introduction to the E-utilities</div></a><a class="route-link auto-link next" href="/E-utilities_zh-CN/E-utilities_EN/04-The%20E-utilities%20In-Depth_EN.html" aria-label="The E-utilities In-Depth: Parameters, Syntax and More"><div class="hint">下一页<span class="arrow end"></span></div><div class="link">The E-utilities In-Depth: Parameters, Syntax and More<!----></div></a></nav><div id="vp-comment" class="giscus-wrapper input-top" style="display:block;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100"><circle cx="28" cy="75" r="11" fill="currentColor"><animate attributeName="fill-opacity" begin="0s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></circle><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 47a28 28 0 0 1 28 28"><animate attributeName="stroke-opacity" begin="0.1s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path><path fill="none" stroke="#88baf0" stroke-width="10" d="M28 25a50 50 0 0 1 50 50"><animate attributeName="stroke-opacity" begin="0.2s" dur="1s" keyTimes="0;0.2;1" repeatCount="indefinite" values="0;1;1"></animate></path></svg></div><!----><!--]--></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">默认页脚</div><div class="vp-copyright">Copyright © 2024 Mr.Hope </div></footer></div><!--]--><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/E-utilities_zh-CN/assets/app-hitTW-u5.js" defer></script>
+  </body>
+</html>
